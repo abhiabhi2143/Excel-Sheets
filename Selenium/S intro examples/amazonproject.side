@@ -1,0 +1,89 @@
+{
+  "id": "f46d466a-95b4-4591-908b-e552f41dccb0",
+  "version": "2.0",
+  "name": "amazonproject",
+  "url": "https://www.amazon.in/",
+  "tests": [{
+    "id": "fee653a8-ce2d-475e-8922-40d9dba352d1",
+    "name": "search",
+    "commands": [{
+      "id": "74d24bdf-7a87-4615-b73d-33ce5fe5e4a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d38bd3cd-b6f6-4f82-8b10-03655e73b227",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x523",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03dc4f9b-cc88-4f06-852e-5b6d38069e9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c99d710-2c00-460e-8caa-9393b0e4f0ae",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d01c7e-6bca-4a7a-80e0-f3697017dc5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "mobile"
+    }, {
+      "id": "4422c481-6c1d-469a-89b5-49b42d182d40",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "35431350-03aa-4994-8873-b743db58a126",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fee653a8-ce2d-475e-8922-40d9dba352d1"]
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}
